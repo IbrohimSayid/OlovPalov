@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: rgb(2, 5, 21);
+  background: linear-gradient(0deg, rgb(2, 5, 21) 3%, rgb(15, 18, 59) 75%);
+  background-repeat: no-repeat;
+}
+
+.signupCotainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 54.5px;
+  margin-top: 2%;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.title h1 {
+  font-size: 30px;
+}
+.title p {
+  font-size: 14px;
+  text-align: center;
+}
+.signupForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  border: 2px solid #75768b;
+  padding: 30px 40px;
+  border-radius: 20px;
+}
+.signupInput {
+  display: flex;
+  flex-direction: column;
+}
+.signupInput label {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #fff;
+  text-align: start;
+}
+.signupInput input {
+  width: 350px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: 2px solid #75768b;
+}
+
+.signupInput input::after {
+  background-color: transparent;
+}
+
+.signupInput input::-moz-placeholder {
+  color: #fff;
+}
+.signupInput input::placeholder {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.checkboxInput {
+  color: #fff;
+}
+.signupBtn {
+  width: 350px;
+  height: 45px;
+  color: #fff;
+  background-color: #0075ff;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.signupBtn:hover {
+  background-color: #033e81;
+}
+
+.haveAccount {
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.haveAccount a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
