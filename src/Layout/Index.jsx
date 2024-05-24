@@ -6,12 +6,14 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 function Layout() {
   return (
-    <>      
-      <Sidebar />
-      <Outlet>
-        <Dashboard />
-        <Products />
-      </Outlet>
+    <>
+      <div className="layout">
+        <Sidebar />
+        <Outlet>
+          <Dashboard />
+          <Products />
+        </Outlet>
+      </div>
     </>
   );
 }

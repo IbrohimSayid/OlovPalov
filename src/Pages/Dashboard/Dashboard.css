@@ -1,0 +1,91 @@
+body {
+  background: rgb(5, 15, 69);
+  background: linear-gradient(
+    123deg,
+    #050f45 27%,
+    #08126c 75%,
+    #030736 100%
+  );
+}
+
+.layout {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  gap: 25%;
+}
+
+.prductsFrom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prductsFrom h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #737D97;
+  padding: 27px 53px;
+  border-radius: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+form div label {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+form div input {
+  width: 350px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #737D97;
+  color: #fff;
+}
+
+select {
+    width: 350px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #08126c;
+}
+
+form div textarea {
+    width: 350px;
+    padding: 15px 10px;
+    border-radius: 20px;
+    height: 90px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.dashboardBtn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #0075FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dashboardBtn:hover {
+    background-color: #004ea7;
+}

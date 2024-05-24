@@ -38,7 +38,7 @@ function Sidebar() {
         <div className="menu">
           <ul>
             <li>
-              <NavLink to="/">
+              <NavLink to="/dashboard">
                 <IoMdHome className="icon" />
                 Dashboard
               </NavLink>
