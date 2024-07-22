@@ -23,8 +23,8 @@ function Products() {
         <div key={product.productName} className="productCard">
           <img src={product.productImg} alt={product.productName} />
           <h3>{product.productName}</h3>
-          <p>Category: {product.productCategory}</p>
-          <p>Price: ${product.productPrice}</p>
+          <p>Meal Name: {product.productCategory}</p>
+          <p>Igredient: {product.productPrice}</p>
           <p>Description: {product.description}</p>
           <button onClick={() => handleDelete(product.productName)}>
             Delete

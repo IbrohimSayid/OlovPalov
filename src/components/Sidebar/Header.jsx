@@ -1,7 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import "./Sidebar.css";
-import "./Sidebar.css";
+import "./Header.css";
 import { Link } from "react-router-dom";
 import { IoMdHome } from "react-icons/io";
 import { IoColorFill, IoStatsChart } from "react-icons/io5";
@@ -29,7 +28,7 @@ function Sidebar() {
 
   return (
     <>
-      <div className="sidebarContainer">
+      <div className="headerContainer">
         <div className="profile">
           {avatar && <img src={avatar} alt="Avatar" className="userAvatar" />}
           <h4>{fullname}</h4>
@@ -38,34 +37,17 @@ function Sidebar() {
         <div className="menu">
           <ul>
             <li>
-              <NavLink to="/dashboard">
-                <IoMdHome className="icon" />
-                Dashboard
-              </NavLink>
+              <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
             <li>
-              <NavLink to="/products">
-                <IoStatsChart className="icon" />
-                Products
-              </NavLink>
+              <NavLink to="/products">Products</NavLink>
             </li>
-          </ul>
-        </div>
-        <div className="comment">
-          <h3>ACCOUNT PAGE</h3>
-        </div>
-        <div className="accountMenu">
-          <ul>
             <li>
-              <NavLink to="/signup">
-                <IoNewspaperOutline className="icon" />
-                Sign Up
-              </NavLink>
+              <NavLink to="/signup">Sign Up</NavLink>
             </li>
             <li>
               <div className="logout" onClick={handleLogout}>
-                <IoIosRocket className="icon" />
-                <p>Log out</p>
+                <NavLink>Log Out</NavLink>
               </div>
             </li>
           </ul>

@@ -8,12 +8,6 @@ html {
   margin: 0;
 }
 
-body {
-  background: rgb(2, 5, 21);
-  background: linear-gradient(0deg, rgb(2, 5, 21) 3%, rgb(15, 18, 59) 75%);
-  background-repeat: no-repeat;
-}
-
 .signupCotainer {
   display: flex;
   flex-direction: column;

@@ -3,8 +3,5 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-.noName {
-    display: flex;
+    background-color: #fff;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Dashboard.css';
+import "./Dashboard.css";
 
 function Dashboard() {
   const [product, setProduct] = useState({
@@ -31,8 +31,8 @@ function Dashboard() {
 
   return (
     <>
-      <div className="prductsFrom">
-        <h2>Create Products</h2>
+      <div className="productsForm">
+        <h2>Add New Reciep</h2>
         <form onSubmit={handleSubmit}>
           <div>
             <label>Product Name:</label>
@@ -41,28 +41,26 @@ function Dashboard() {
               name="productName"
               value={product.productName}
               onChange={handleChange}
+              placeholder="Enter your meal name"
             />
           </div>
           <div>
-            <label>Product Category:</label>
-            <select
+            <label>Cooking time:</label>
+            <input
               name="productCategory"
               value={product.productCategory}
               onChange={handleChange}
-            >
-              <option value="" className="option">Tanlang...</option>
-              <option value="Qimmat" className="option">Tezkor</option>
-              <option value="Sifatli" className="option">Sifatli</option>
-              <option value="Hashamatli" className="option">Hashamatli</option>
-            </select>
+              placeholder="Enter your time of your meal"
+            ></input>
           </div>
           <div>
-            <label>Product Price:</label>
+            <label>Indegrients:</label>
             <input
-              type="number"
+              type="text"
               name="productPrice"
               value={product.productPrice}
               onChange={handleChange}
+              placeholder="Enter your ingradient your meal"
             />
           </div>
           <div>
@@ -72,6 +70,7 @@ function Dashboard() {
               name="productImg"
               value={product.productImg}
               onChange={handleChange}
+              placeholder="Enter image URL"
             />
           </div>
           <div>
@@ -80,9 +79,12 @@ function Dashboard() {
               name="description"
               value={product.description}
               onChange={handleChange}
+              placeholder="Enter yor method of meal"
             />
           </div>
-          <button type="submit" className="dashboardBtn">Create</button>
+          <button type="submit" className="dashboardBtn">
+            Create
+          </button>
         </form>
       </div>
     </>
