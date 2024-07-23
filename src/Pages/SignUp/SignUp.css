@@ -8,6 +8,10 @@ html {
   margin: 0;
 }
 
+body {
+  background-color: #022b3a;
+}
+
 .signupCotainer {
   display: flex;
   flex-direction: column;
@@ -20,6 +24,7 @@ html {
   display: flex;
   flex-direction: column;
   color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .title h1 {
   font-size: 30px;
@@ -27,19 +32,15 @@ html {
 .title p {
   font-size: 14px;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .signupForm {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 24px;
-  border: 2px solid #75768b;
-  padding: 30px 40px;
-  border-radius: 20px;
+  border: 2px solid #bfdbf7;
 }
 .signupInput {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .signupInput label {
   font-size: 14px;
@@ -83,6 +84,13 @@ html {
 }
 .signupBtn:hover {
   background-color: #033e81;
+}
+
+.checkboxInput {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .haveAccount {
